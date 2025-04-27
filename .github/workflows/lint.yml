@@ -14,5 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install ESLint v8
+        run: npm install --save-dev eslint@8
+
       - name: Run ESLint
         run: npx eslint .
